@@ -1,0 +1,130 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'san-serif';
+  }
+  
+  /* Container for the project section */
+  .conatiner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: #414141;
+  }
+  
+  /* Heading styling */
+  .conatiner h2 {
+    margin: 20px;
+    font-size: 45px;
+    color: rgb(228, 187, 7);
+  }
+  
+  /* Project section grid layout */
+  .project-section {
+    width: 90%;
+    padding: 10px;
+    position: relative;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  
+  /* Individual project card styling */
+  .project-section .project1 {
+    border: 2px solid black;
+    background-color: #212121;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    color: #aca6a6;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease; /* Added smooth transitions */
+  }
+  
+  /* Hover effect for project card: scale up and tilt effect */
+  .project-section .project1:hover {
+    cursor: pointer;
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 15px 30px; /* Enhanced shadow for lift effect */
+    filter: brightness(1.1); /* Brightness increase on hover */
+  }
+  
+  /* Icon animation */
+  .project-section .project1 .btn i {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for rotation and color change */
+  }
+  
+  /* Rotate and color change on hover for icons */
+  .project-section .project1 .btn i:hover {
+    transform: rotate(360deg); /* Full rotation of 360 degrees */
+  }
+  
+  /* Color transition for first icon */
+  .project-section .project1 .btn a:nth-child(1):hover {
+    color: yellow;
+  }
+  
+  /* Color transition for second icon */
+  .project-section .project1 .btn a:nth-child(2):hover {
+    color: #06539b;
+  }
+  
+  /* Styling for the buttons */
+  .project-section .project1 .btn {
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Styling for links in buttons */
+  .project-section .project1 .btn a {
+    list-style: none;
+    text-decoration: none;
+    color: #919191;
+  }
+  
+  /* Image styling */
+  .project-section .project1 img {
+    width: 300px;
+    height: 50%;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease; /* Smooth transition for image scale */
+  }
+  
+  /* Hover effect for image */
+  .project-section .project1:hover img {
+    transform: scale(1.1); /* Slight zoom-in effect on image */
+  }
+  
+  /* Header and paragraph styling */
+  .project-section .project1 h1 {
+    margin-bottom: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for text */
+    opacity: 1;
+  }
+  
+  .project-section .project1 p {
+    line-height: 1.2;
+    margin-bottom: 15px;
+    opacity: 1;
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Smooth transition for text */
+  }
+  
+  /* Button hover effect */
+  .project-section .project1 button:hover {
+    background-color: #045c30;
+    color: white;
+  }
+  
